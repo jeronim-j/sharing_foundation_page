@@ -1,0 +1,45 @@
+.main-background {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -310px;
+  .main-section {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    min-height: 40%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-section-header {
+      color: $color-base-grey;
+      font-size: 2.25em;
+      letter-spacing: -1px;
+      text-align: center;
+      padding: 10px;
+    }
+    .main-section-decoration {
+      width: 250px;
+      height: 50px;
+      background-repeat: no-repeat;
+      margin-top: 10px;
+    }
+    .main-section-buttons {
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: center;
+        color: $color-base-grey;
+        width: 35%;
+        border: 1px solid $color-base-grey;
+        margin: 10px;
+        padding: 5px;
+      }
+    }
+  }
+}

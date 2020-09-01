@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home3Columns = () => {
     return (
-        <section className="columns" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/3-Columns-Background.png` }}>
+        <section id="columns" className="columns" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/3-Columns-Background.png` }}>
             <div className="columns-article">
                 <h1 className="columns-article-header">10</h1>
                 <span className="columns-article-span">ODDANYCH WORKÓW</span>

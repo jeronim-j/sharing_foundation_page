@@ -4,7 +4,7 @@ const Home3Columns = () => {
     return (
         <section id="columns" className="columns" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/3-Columns-Background.png` }}>
             <div className="columns-article">
-                <h1 className="columns-article-header">10</h1>
+                <h3 className="columns-article-header">10</h3>
                 <span className="columns-article-span">ODDANYCH WORKÓW</span>
                 <p className="columns-article-text">
                     Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma.
@@ -12,7 +12,7 @@ const Home3Columns = () => {
                 </p>
             </div>
             <div className="columns-article">
-                <h1 className="columns-article-header">5</h1>
+                <h3 className="columns-article-header">5</h3>
                 <span className="columns-article-span">WSPARTYCH ORGANIZACJI</span>
                 <p className="columns-article-text">
                     Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma.
@@ -20,7 +20,7 @@ const Home3Columns = () => {
                 </p>
             </div>
             <div className="columns-article">
-                <h1 className="columns-article-header">7</h1>
+                <h3 className="columns-article-header">7</h3>
                 <span className="columns-article-span">ZORGANIZOWANYCH ZBIÓREK</span>
                 <p className="columns-article-text">
                     Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma.

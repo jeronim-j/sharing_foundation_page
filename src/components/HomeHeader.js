@@ -12,9 +12,9 @@ const HomeHeader = () => {
             <section className="navbar-lower">
                 <Scroll to="header" smooth={true} duration={500}>Start</Scroll>
                 <Scroll to="columns" smooth={true} duration={500}>O co chodzi?</Scroll>
-                <a href="/">O nas</a>
-                <a href="/">Fundacja i oragnizacje</a>
-                <a href="/">Kontakt</a>
+                <Scroll to="about" smooth={true} duration={500}>O nas</Scroll>
+                <Scroll to="organizations" smooth={true} duration={500}>Fundacja i oragnizacje</Scroll>
+                <Scroll to="contact" smooth={true} duration={500}>Kontakt</Scroll>
             </section>
         </header>
     )

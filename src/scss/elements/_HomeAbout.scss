@@ -1,0 +1,45 @@
+.about {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: $background-color;
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    .about-info-header {
+      font-size: 2.375em;
+      color: $color-base-grey;
+    }
+    .about-info-decoration {
+      margin-top: 30px;
+      height: 50px;
+      width: 250px;
+      background-repeat: no-repeat;
+    }
+    .about-info-text {
+      width: 80%;
+      letter-spacing: -0.6px;
+      line-height: 1.5;
+      font-size: 1.875em;
+      color: $color-base-grey;
+      text-align: center;
+
+    }
+    .about-info-sign {
+      height: 150px;
+      width: 200px;
+      background-repeat: no-repeat;
+      align-self: flex-end;
+      margin-top: 30px;
+      margin-right: 40px;
+    }
+  }
+  .about-photo {
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

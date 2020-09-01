@@ -1,6 +1,7 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
 import HomeMainPage from "./HomeMainPage";
+import Home3Columns from "./Home3Columns";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <>
         <HomeHeader />
         <HomeMainPage />
+        <Home3Columns />
         </>
     )
 }

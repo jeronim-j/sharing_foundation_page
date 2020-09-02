@@ -20,9 +20,17 @@ const HomeContact = () => {
                         <label className="contact-form-text">Wpisz swoją wiadomość
                             <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
                         </label>
-                        <input type="submit" value="Wyślij"></input>
+                        <input type="submit" value="Wyślij"/>
                     </form>
                 </div>
+                <footer className="footer">
+                    <span className="footer-text">Copyright by Coders Lab</span>
+                    <div className="footer-icons">
+                        <a href="https://facebook.com/" className="footer-icon" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Facebook.svg`}}> </a>
+                            <a href="https://www.instagram.com/" className="footer-icon" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Instagram.svg`}}> </a>
+                    </div>
+
+                </footer>
             </section>
         </>
     )

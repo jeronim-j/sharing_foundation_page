@@ -1,0 +1,97 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  .contact-photo-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width: 50%;
+    .contact-header {
+      font-size: 2.25em;
+      text-align: center;
+      color: $color-base-grey;
+      letter-spacing: -0.76px;
+      line-height: 1;
+    }
+    .contact-decoration {
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 250px;
+      margin-top: 40px;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 40%;
+      label {
+        color: $color-base-grey;
+        font-weight: 600;
+        font-size: 0.875em;
+        margin: 5px 10px;
+      }
+      .contact-form-upper {
+        display: flex;
+        .contact-form-upper-input {
+          display: flex;
+          flex-direction: column;
+          input {
+            margin-top: 5px;
+            border: 1px solid transparent;
+            background-color: transparent;
+            outline: none;
+            border-bottom-color: $color-base-grey;
+            &:focus {
+              border-bottom: 2px solid $color-base-grey;
+            }
+          }
+        }
+      }
+      .contact-form-text {
+        display: flex;
+        flex-direction: column;
+        textarea {
+          appearance: none;
+          outline: none;
+          margin-top: 5px;
+          resize: none;
+          height: 100px;
+          border: 1px solid transparent;
+          border-bottom-color: $color-base-grey;
+          background-color: transparent;
+
+          &:focus {
+            border-bottom: 2px solid $color-base-grey;
+          }
+        }
+      }
+      input[type=submit] {
+        align-self: flex-end;
+        appearance: none;
+        border: 1px solid $color-base-grey;
+        color: $color-base-grey;
+        background-color: transparent;
+        padding: 5px 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

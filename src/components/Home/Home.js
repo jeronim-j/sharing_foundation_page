@@ -13,7 +13,7 @@ const Home = () => {
         <>
             <HomeHeader/>
             <HomeMainPage/>
-            <Home3Columns/>
+            <Home3Columns />
             <Home4Steps/>
             <HomeAbout/>
             <HomeOrganizations/>

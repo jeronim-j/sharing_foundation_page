@@ -77,7 +77,6 @@
           border: 1px solid transparent;
           border-bottom-color: $color-base-grey;
           background-color: transparent;
-
           &:focus {
             border-bottom: 2px solid $color-base-grey;
           }
@@ -107,21 +106,17 @@
       text-align: center;
       color: $color-base-grey;
       opacity: 0.8;
-
     }
     .footer-icons {
       display: flex;
       width: 10%;
       .footer-icon {
-        height: 30px;
-        width: 30px;
+        min-height: 30px;
+        min-width: 30px;
         margin: 0 5px;
         cursor: pointer;
       }
     }
-
-
-
   }
 }
 

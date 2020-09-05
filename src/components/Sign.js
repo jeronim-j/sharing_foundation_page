@@ -60,7 +60,6 @@ const Sign = () => {
                     <label htmlFor="email">Email</label>
                     <input
                         className={emailErr !== "" ? "error-input" : ""}
-                        id="email"
                         type="email"
                         name="email"
                         value={email}
@@ -70,7 +69,6 @@ const Sign = () => {
                     <label htmlFor="password">Hasło</label>
                     <input
                         className={passwordErr !== "" ? "error-input" : ""}
-                        id="password"
                         type="password"
                         name="password"
                         value={password}
@@ -80,7 +78,6 @@ const Sign = () => {
                     <label htmlFor="passwordRepeat">Powtórz hasło</label>
                     <input
                         className={passwordRepeatErr !== "" ? "error-input" : ""}
-                        id="passwordRepeat"
                         type="password"
                         name="passwordRepeat"
                         value={passwordRepeat}

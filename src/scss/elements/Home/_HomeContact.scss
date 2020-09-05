@@ -42,6 +42,7 @@
       flex-direction: column;
       justify-content: space-around;
       height: 40%;
+
       label {
         color: $color-base-grey;
         font-weight: 600;
@@ -53,6 +54,15 @@
         .contact-form-upper-input {
           display: flex;
           flex-direction: column;
+          .error-input {
+            border-bottom-color: red;
+          }
+          .error-msg {
+            color: red;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin: 0 50px;
+          }
           input {
             margin-top: 5px;
             border: 1px solid transparent;
@@ -60,7 +70,7 @@
             outline: none;
             border-bottom-color: $color-base-grey;
             &:focus {
-              border-bottom: 2px solid $color-base-grey;
+              border-bottom-width: 2px;
             }
           }
         }
@@ -68,6 +78,16 @@
       .contact-form-text {
         display: flex;
         flex-direction: column;
+
+        .error-input {
+          border-bottom-color: red;
+        }
+        .error-msg {
+          color: red;
+          font-size: 0.75em;
+          font-weight: 600;
+          margin: 0 50px;
+        }
         textarea {
           appearance: none;
           outline: none;
@@ -78,7 +98,7 @@
           border-bottom-color: $color-base-grey;
           background-color: transparent;
           &:focus {
-            border-bottom: 2px solid $color-base-grey;
+            border-bottom-width: 2px;
           }
         }
       }

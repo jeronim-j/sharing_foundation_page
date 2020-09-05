@@ -56,7 +56,6 @@ const Login = () => {
                     <label htmlFor="email">Email</label>
                     <input
                         className={emailErr !== "" ? "error-input" : ""}
-                        id="email"
                         type="email"
                         name="email"
                         value={email}
@@ -66,7 +65,6 @@ const Login = () => {
                     <label htmlFor="password">Hasło</label>
                     <input
                         className={passwordErr !== "" ? "error-input" : ""}
-                        id="password"
                         type="password"
                         name="password"
                         value={password}

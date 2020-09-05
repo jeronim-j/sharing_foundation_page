@@ -37,8 +37,11 @@
       border-bottom-color: $color-base-grey;
 
       &:focus {
-        border-bottom: 2px solid $color-base-grey;
+        border-bottom-width: 2px;
       }
+    }
+    .error-input {
+      border-bottom-color: red;
     }
     .error-msg {
       color: red;
@@ -46,6 +49,7 @@
       font-weight: 600;
       margin: 0 50px;
     }
+
     .login-buttons {
       display: flex;
       width: 100%;

@@ -7,10 +7,9 @@ const HomeContact = () => {
     const [emailErr, setEmailErr] = useState("");
     const [msg, setMsg] = useState("");
     const[msgErr, setMsgErr] = useState("");
+    const [successMsg, setSuccessMsg] = useState("");
 
     const validate = () => {
-
-
         if (name.includes(' ')) {
             setNameErr(prevState => "Imię musi być jednym wyrazem");
             return false;
@@ -20,6 +19,7 @@ const HomeContact = () => {
         } else if (msg.length < 120) {
             setMsgErr(prevState => "Wiadomość musi być dłuższa niż 120 znaków")
         } else {
+            setSuccessMsg(prevState => "Wiadomość została wysłana! Wkrótce się skontaktujemy.")
             return true;
         }
     };
@@ -47,6 +47,7 @@ const HomeContact = () => {
                     <h2 className="contact-header">Skontaktuj się z nami</h2>
                     <div className="contact-decoration"  style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Decoration.svg` }} />
                     <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                        <div className="success">{successMsg}</div>
                         <div className="contact-form-upper">
                             <label className="contact-form-upper-input">Wpisz swoje imię
                                 <input

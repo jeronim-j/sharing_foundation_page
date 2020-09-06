@@ -42,6 +42,14 @@
       flex-direction: column;
       justify-content: space-around;
       height: 40%;
+      .success {
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+        color: forestgreen;
+        font-size: 0.875em;
+        font-weight: 600;
+      }
 
       label {
         color: $color-base-grey;

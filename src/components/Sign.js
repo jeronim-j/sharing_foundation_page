@@ -25,15 +25,15 @@ const Sign = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        setEmailErr("");
-        setPasswordErr("");
-        setPasswordRepeatErr("");
+        setEmailErr(prevState => "");
+        setPasswordErr(prevState => "");
+        setPasswordRepeatErr(prevState => "");
         const isValid = validate();
         if (isValid) {
             console.log(email, password);
-            setEmail("");
-            setPassword("");
-            setPasswordRepeat("");
+            setEmail(prevState => "");
+            setPassword(prevState => "");
+            setPasswordRepeat(prevState => "");
         }
     }
 

@@ -23,13 +23,13 @@ const Login = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        setEmailErr("");
-        setPasswordErr("");
+        setEmailErr(prevState => "");
+        setPasswordErr(prevState => "");
         const isValid = validate();
         if (isValid) {
             console.log(email, password);
-            setEmail("");
-            setPassword("");
+            setEmail(prevState => "");
+            setPassword(prevState => "");
         }
     }
 

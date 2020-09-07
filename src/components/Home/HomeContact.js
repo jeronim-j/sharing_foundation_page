@@ -17,6 +17,7 @@ const HomeContact = () => {
             setEmailErr(prevState => "Podany email jest nieprawidłowy");
             return false;
         } else if (msg.length < 120) {
+            setSuccessMsg(prevState => "Wiadomość została wysłana! Wkrótce się skontaktujemy.")
             setMsgErr(prevState => "Wiadomość musi być dłuższa niż 120 znaków")
         } else {
             setSuccessMsg(prevState => "Wiadomość została wysłana! Wkrótce się skontaktujemy.")
@@ -26,15 +27,15 @@ const HomeContact = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        setNameErr("");
-        setEmailErr("");
-        setMsgErr("");
+        setNameErr(prevState => "");
+        setEmailErr(prevState => "");
+        setMsgErr(prevState => "");
         const isValid = validate();
         if (isValid) {
             console.log(name, email, msg);
-            setName("");
-            setEmail("");
-            setMsg("");
+            setName(prevState => "");
+            setEmail(prevState => "");
+            setMsg(prevState => "");
         }
     }
 

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Organizacja pozarządowa 1",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 2,
+    "name": "Organizacja pozarządowa 2",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 3,
+    "name": "Organizacja pozarządowa 3",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 4,
+    "name": "Organizacja pozarządowa 4",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 5,
+    "name": "Organizacja pozarządowa 5",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 6,
+    "name": "Organizacja pozarządowa 6",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  }
+]

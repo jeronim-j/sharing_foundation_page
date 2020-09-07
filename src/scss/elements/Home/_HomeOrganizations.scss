@@ -1,4 +1,62 @@
 .organizations {
   height: 100vh;
-  width: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .organizations-header {
+    font-size: 2.25em;
+    color: $color-base-grey;
+    letter-spacing: -0.76px;
+  }
+  .organizations-decoration {
+    width: 250px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+  .organizations-radio {
+    width: 60%;
+    height: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    label {
+      border: 1px solid $color-base-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      height: 70%;
+      width: 30%;
+      input {
+        appearance: none;
+        position: absolute;
+      }
+      span {
+        font-size: 1.125em;
+        font-weight: 400;
+        color: $color-base-grey;
+      }
+    }
+  }
+  .organizations-text {
+    color: $color-base-grey;
+    width: 40%;
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .organizations-list {
+    width: 80%;
+    .organizations-list-element {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .organizations-list-element-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+    }
+  }
 }

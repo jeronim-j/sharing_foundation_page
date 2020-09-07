@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Fundacja 1",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 2,
+    "name": "Fundacja 2",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 3,
+    "name": "Fundacja 3",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 4,
+    "name": "Fundacja 4",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 5,
+    "name": "Fundacja 5",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 6,
+    "name": "Fundacja 6",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 7,
+    "name": "Fundacja 7",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 8,
+    "name": "Fundacja 8",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 9,
+    "name": "Fundacja 9",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  }
+]

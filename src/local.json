@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Lokalna zbiórka 1",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 2,
+    "name": "Lokalna zbiórka 2",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  },
+  {
+    "id": 3,
+    "name": "Lokalna zbiórka 3",
+    "target": "Pomagamy ludziom",
+    "resources": "jedzenie, picie"
+  }
+]

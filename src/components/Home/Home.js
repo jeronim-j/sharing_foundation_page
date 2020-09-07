@@ -11,13 +11,13 @@ import HomeContact from "./HomeContact";
 const Home = () => {
     return (
         <>
-            <HomeHeader/>
-            <HomeMainPage/>
+            <HomeHeader />
+            <HomeMainPage />
             <Home3Columns />
-            <Home4Steps/>
-            <HomeAbout/>
-            <HomeOrganizations/>
-            <HomeContact/>
+            <Home4Steps />
+            <HomeAbout />
+            <HomeOrganizations />
+            <HomeContact />
         </>
     )
 }

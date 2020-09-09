@@ -7,17 +7,22 @@ const Pagination = ({orgPerPage, totalOrg, paginate}) => {
         pageNumbers.push(i);
     }
 
-    return (
-        <nav>
-            <ul>
-                {pageNumbers.map(number => (
-                    <li key={number}>
-                        <span onClick={() => paginate(number)} >{number}</span>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    )
+
+    if (pageNumbers.length === 1) {
+        return null;
+    } else {
+        return (
+            <nav>
+                <ul>
+                    {pageNumbers.map(number => (
+                        <li key={number}>
+                            <span onClick={() => paginate(number)}>{number}</span>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        )
+    }
 }
 
 export default Pagination;

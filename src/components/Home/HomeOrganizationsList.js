@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Pagination from "./HomeOrganizationsListPagination";
 
 const HomeOrganizationsList = ({orgArray}) => {
@@ -9,6 +9,9 @@ const HomeOrganizationsList = ({orgArray}) => {
     const currentOrg = orgArray.slice(indexOfFirstOrg, indexOfLastOrg);
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+    useEffect(() => {
+        paginate(1);
+    }, [orgArray])
 
     return (
         <>

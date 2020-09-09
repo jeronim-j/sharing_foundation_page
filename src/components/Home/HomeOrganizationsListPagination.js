@@ -12,10 +12,10 @@ const Pagination = ({orgPerPage, totalOrg, paginate}) => {
         return null;
     } else {
         return (
-            <nav>
-                <ul>
+            <nav className="pagination">
+                <ul className="pagination-list">
                     {pageNumbers.map(number => (
-                        <li key={number}>
+                        <li className="pagination-list-element" key={number}>
                             <span onClick={() => paginate(number)}>{number}</span>
                         </li>
                     ))}

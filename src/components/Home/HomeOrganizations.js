@@ -1,15 +1,13 @@
 import React, {useState} from 'react';
 import HomeOrganizationsList from "./HomeOrganizationsList";
-import foundationsArray from '../../foundations.json';
-import nonGovArray from '../../non-gov.json';
-import localArray from '../../local.json';
+import foundationsArray from '../../data/foundations.json';
+import nonGovArray from '../../data/non-gov.json';
+import localArray from '../../data/local.json';
 
 const HomeOrganizations = () => {
     const [value, setValue] = useState("foundations");
     let orgText;
     let orgList;
-
-
     if (value === "foundations") {
         orgText =
             <p className="organizations-text">
@@ -17,14 +15,16 @@ const HomeOrganizations = () => {
                 Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
             </p>
         orgList = <HomeOrganizationsList orgArray={foundationsArray} />
-    } else if (value === "non-gov") {
+    }
+    else if (value === "non-gov") {
         orgText =
             <p className="organizations-text">
                 W naszej bazie znajdziesz listę zweryfikowanych organizacji pozarządowych, z którymi współpracujemy.
                 Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
             </p>
         orgList = <HomeOrganizationsList orgArray={nonGovArray} />
-    } else {
+    }
+    else {
         orgText =
             <p className="organizations-text">
                 W naszej bazie znajdziesz listę zweryfikowanych lokalnych zbiórek, z którymi współpracujemy.

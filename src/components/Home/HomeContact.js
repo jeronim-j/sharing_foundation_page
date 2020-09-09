@@ -6,11 +6,11 @@ const HomeContact = () => {
     const [email, setEmail] = useState("");
     const [emailErr, setEmailErr] = useState("");
     const [msg, setMsg] = useState("");
-    const[msgErr, setMsgErr] = useState("");
+    const [msgErr, setMsgErr] = useState("");
     const [successMsg, setSuccessMsg] = useState("");
 
     const validate = () => {
-        if (name.includes(' ')) {
+        if (name.includes(' ') || name === "") {
             setNameErr(prevState => "Imię musi być jednym wyrazem");
             return false;
         } else if (!email.includes('@') || !email.includes('.')) {

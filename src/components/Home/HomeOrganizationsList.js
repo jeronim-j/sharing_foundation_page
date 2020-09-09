@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Pagination from "./HomeOrganizationsListPagination";
 
 const HomeOrganizationsList = ({orgArray}) => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -6,26 +7,8 @@ const HomeOrganizationsList = ({orgArray}) => {
     const indexOfLastOrg = currentPage * orgPerPage;
     const indexOfFirstOrg = indexOfLastOrg - orgPerPage;
     const currentOrg = orgArray.slice(indexOfFirstOrg, indexOfLastOrg);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-    const Pagination = ({orgPerPage, totalOrg, paginate}) => {
-        const pageNumbers = [];
-        paginate = (pageNumber) => setCurrentPage(pageNumber);
-        for (let i = 1; i <= Math.ceil(totalOrg / orgPerPage); i++) {
-            pageNumbers.push(i);
-        }
-
-        return (
-            <nav>
-                <ul>
-                    {pageNumbers.map(number => (
-                        <li key={number}>
-                            <span onClick={() => paginate(number)} >{number}</span>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-        )
-    }
 
     return (
         <>
@@ -42,7 +25,7 @@ const HomeOrganizationsList = ({orgArray}) => {
                     </li>
                 ))}
             </ul>
-            <Pagination orgPerPage={orgPerPage} totalOrg={orgArray.length} />
+            <Pagination orgPerPage={orgPerPage} totalOrg={orgArray.length} paginate={paginate} />
 
         </>
     )

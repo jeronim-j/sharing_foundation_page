@@ -40,7 +40,7 @@ const HomeContact = () => {
                 body: JSON.stringify({
                     name: name,
                     email: email,
-                    msg: msg
+                    message: msg
                 })
             }).then(res => {
                 return res.json()

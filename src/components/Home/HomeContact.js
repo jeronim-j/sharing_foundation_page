@@ -17,8 +17,8 @@ const HomeContact = () => {
             setEmailErr(prevState => "Podany email jest nieprawidłowy");
             return false;
         } else if (msg.length < 120) {
-            setSuccessMsg(prevState => "Wiadomość została wysłana! Wkrótce się skontaktujemy.")
-            setMsgErr(prevState => "Wiadomość musi być dłuższa niż 120 znaków")
+            setMsgErr(prevState => "Wiadomość musi być dłuższa niż 120 znaków");
+            return false;
         } else {
             setSuccessMsg(prevState => "Wiadomość została wysłana! Wkrótce się skontaktujemy.")
             return true;
@@ -32,7 +32,21 @@ const HomeContact = () => {
         setMsgErr(prevState => "");
         const isValid = validate();
         if (isValid) {
-            console.log(name, email, msg);
+            fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    msg: msg
+                })
+            }).then(res => {
+                return res.json()
+            })
+                .then(data => console.log(data))
+                .catch(error => console.log(error))
             setName(prevState => "");
             setEmail(prevState => "");
             setMsg(prevState => "");
@@ -96,3 +110,4 @@ const HomeContact = () => {
 }
 
 export default HomeContact;
+

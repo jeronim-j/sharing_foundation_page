@@ -1,11 +1,12 @@
 import React from 'react';
+import Decoration from "../Decoration";
 
 const HomeAbout = () => {
     return (
         <section className="about" id="about">
             <div className="about-info">
                 <h2 className="about-info-header">O nas</h2>
-                <div className="about-info-decoration"  style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Decoration.svg` }} />
+                <Decoration />
                 <p className="about-info-text">
                     Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.
                     Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.

@@ -7,7 +7,6 @@ import HomeAbout from "./HomeAbout";
 import HomeOrganizations from "./HomeOrganizations";
 import HomeContact from "./HomeContact";
 
-
 const Home = () => {
     return (
         <>

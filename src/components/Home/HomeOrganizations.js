@@ -3,6 +3,7 @@ import HomeOrganizationsList from "./HomeOrganizationsList";
 import foundationsArray from '../../data/foundations.json';
 import nonGovArray from '../../data/non-gov.json';
 import localArray from '../../data/local.json';
+import Decoration from "../Decoration";
 
 const HomeOrganizations = () => {
     const [value, setValue] = useState("foundations");
@@ -37,8 +38,7 @@ const HomeOrganizations = () => {
         <>
             <section className="organizations" id="organizations">
                 <h2 className="organizations-header">Komu pomagamy?</h2>
-                <div className="organizations-decoration"
-                     style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Decoration.svg`}}/>
+                <Decoration />
                 <form className="organizations-radio">
                     <label>
                         <span>Fundacjom</span>

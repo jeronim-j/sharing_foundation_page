@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Decoration from "../Decoration";
 
 const Home4Steps = () => {
     return (
         <section className="steps-container">
             <div className="steps-header">
                 <span className="steps-header-text">Wystarczą 4 proste kroki</span>
-                <div className="steps-header-decoration"
-                     style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Decoration.svg`}}/>
+                <Decoration />
             </div>
             <div className="steps-articles">
                 <div className="steps-article">

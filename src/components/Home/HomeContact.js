@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Decoration from "../Decoration";
 
 const HomeContact = () => {
     const [name, setName] = useState("");
@@ -56,11 +57,12 @@ const HomeContact = () => {
 
     return (
         <>
-            <section className="contact" id="contact" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Background-Contact-Form.jpg` }}>
+            <section className="contact" id="contact"
+                     style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Background-Contact-Form.jpg`}}>
                 <div className="contact-photo-filter"/>
                 <div className="contact-section">
                     <h2 className="contact-header">Skontaktuj się z nami</h2>
-                    <div className="contact-decoration"  style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Decoration.svg` }} />
+                    <Decoration/>
                     <form className="contact-form" onSubmit={handleSubmit} noValidate>
                         <div className="success">{successMsg}</div>
                         <div className="contact-form-upper">
@@ -100,8 +102,10 @@ const HomeContact = () => {
                 <footer className="footer">
                     <span className="footer-text">Copyright by Coders Lab</span>
                     <div className="footer-icons">
-                        <a href="https://facebook.com/" className="footer-icon" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Facebook.svg`}}> </a>
-                            <a href="https://www.instagram.com/" className="footer-icon" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Instagram.svg`}}> </a>
+                        <a href="https://facebook.com/" className="footer-icon"
+                           style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Facebook.svg`}}> </a>
+                        <a href="https://www.instagram.com/" className="footer-icon"
+                           style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/Instagram.svg`}}> </a>
                     </div>
                 </footer>
             </section>

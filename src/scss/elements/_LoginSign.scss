@@ -5,12 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   .login-header {
     font-size: 2.5em;
     color: $color-base-grey;
   }
-
   .login-form {
     margin-top: 30px;
     display: flex;
@@ -28,7 +26,6 @@
       background-color: transparent;
       outline: none;
       border-bottom-color: $color-base-grey;
-
       &:focus {
         border-bottom-width: 2px ;
       }
@@ -42,7 +39,6 @@
       font-weight: 600;
       margin: 0 50px;
     }
-
     .login-buttons {
       display: flex;
       width: 100%;
@@ -69,6 +65,4 @@
       }
     }
   }
-
-
 }

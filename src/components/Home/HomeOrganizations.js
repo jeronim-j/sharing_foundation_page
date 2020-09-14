@@ -4,33 +4,18 @@ import foundationsArray from '../../data/foundations.json';
 import nonGovArray from '../../data/non-gov.json';
 import localArray from '../../data/local.json';
 import Decoration from "../Decoration";
+import HomeOrganizationsConfig from "./HomeOrganizationsConfig";
 
 const HomeOrganizations = () => {
     const [value, setValue] = useState("foundations");
-    let orgText;
     let orgList;
     if (value === "foundations") {
-        orgText =
-            <p className="organizations-text">
-                W naszej bazie znajdziesz listę zweryfikowanych fundacji, z którymi współpracujemy.
-                Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
-            </p>
         orgList = <HomeOrganizationsList orgArray={foundationsArray} />
     }
-    else if (value === "non-gov") {
-        orgText =
-            <p className="organizations-text">
-                W naszej bazie znajdziesz listę zweryfikowanych organizacji pozarządowych, z którymi współpracujemy.
-                Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
-            </p>
+    else if (value === "nongov") {
         orgList = <HomeOrganizationsList orgArray={nonGovArray} />
     }
     else {
-        orgText =
-            <p className="organizations-text">
-                W naszej bazie znajdziesz listę zweryfikowanych lokalnych zbiórek, z którymi współpracujemy.
-                Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
-            </p>
         orgList = <HomeOrganizationsList orgArray={localArray} />
     }
 
@@ -54,7 +39,7 @@ const HomeOrganizations = () => {
                         <input
                             name="organizations"
                             type="radio"
-                            value="non-gov"
+                            value="nongov"
                             onChange={e => setValue(e.target.value)}
                         />
                     </label>
@@ -68,7 +53,7 @@ const HomeOrganizations = () => {
                         />
                     </label>
                 </form>
-                {orgText}
+                <p className="organizations-text">{HomeOrganizationsConfig[value]}</p>
                 {orgList}
             </section>
         </>

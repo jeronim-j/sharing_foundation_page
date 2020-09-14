@@ -9,7 +9,9 @@ const Pagination = ({orgPerPage, totalOrg, paginate}) => {
 
 
     if (pageNumbers.length === 1) {
-        return null;
+        return (
+            <div/>
+        )
     } else {
         return (
             <nav className="pagination">

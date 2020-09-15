@@ -18,12 +18,33 @@
     .columns-article-span {
       font-size: 1.125em;
       color: $color-base-grey;
+      text-align: center;
     }
     .columns-article-text {
       font-family: $font-alt;
       font-weight: 300;
       text-align: center;
       width: 80%;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .columns {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .columns-article {
+      margin: 10px auto;
+    }
+    .columns-article-header {
+      font-size: 4em;
+      margin: 10px auto;
+    }
+    .columns-article-span {
+      margin: 10px auto;
     }
   }
 }

@@ -37,3 +37,23 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 890px) {
+  .about {
+    .about-info {
+      .about-info-header{
+        font-size: 2em;
+        margin-top: 20px;
+      }
+      .decoration {
+        height: 100px;
+      }
+      .about-info-text {
+        font-size: 1.25em;
+      }
+    }
+    .about-photo {
+      background-position-x: 30%;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .main-background {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,10 +29,30 @@
         font-weight: 300;
         text-align: center;
         color: $color-base-grey;
-        width: 35%;
         border: 1px solid $color-base-grey;
         margin: 10px;
         padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 704px) {
+  .main-background {
+    background-position-y: bottom;
+    background-position-x: -250px;
+    .main-section {
+      margin-top: -60px;
+      .main-section-header {
+        font-size: 1.75em;
+      }
+      .main-section-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: 1.5em;
+        }
       }
     }
   }

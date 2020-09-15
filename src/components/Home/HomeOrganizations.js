@@ -3,7 +3,7 @@ import HomeOrganizationsList from "./HomeOrganizationsList";
 import foundationsArray from '../../data/foundations.json';
 import nonGovArray from '../../data/non-gov.json';
 import localArray from '../../data/local.json';
-import Decoration from "../Decoration";
+import Decoration from "../Common/Decoration";
 import HomeOrganizationsConfig from "./HomeOrganizationsConfig";
 
 const HomeOrganizations = () => {

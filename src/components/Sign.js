@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link} from 'react-router-dom';
-import Header from "./Header";
-import Decoration from "./Decoration";
+import Header from "./Common/Header";
+import Decoration from "./Common/Decoration";
 
 const Sign = () => {
     const [email, setEmail] = useState("");

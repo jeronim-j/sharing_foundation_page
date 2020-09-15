@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Decoration from "../Decoration";
+import Decoration from "../Common/Decoration";
 
 const HomeMainPage = () => {
     return (

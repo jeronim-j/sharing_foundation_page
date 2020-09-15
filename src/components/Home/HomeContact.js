@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Decoration from "../Decoration";
+import Decoration from "../Common/Decoration";
 
 const HomeContact = () => {
     const [name, setName] = useState("");

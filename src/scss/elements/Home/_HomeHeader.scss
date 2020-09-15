@@ -31,5 +31,16 @@
       }
     }
   }
+}
 
+@media (max-width: 704px) {
+  .header-main {
+    align-items: flex-start;
+
+    .navbar-lower {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
